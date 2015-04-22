@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<agent-input clean='true' temporary='true'>
+<server>
+<repository location='.'/>
+<repository location='..'/>
+</server>
+<profile installLocation='/opt/IBM/IntegrationToolkit90' id='IBM Integration Toolkit'>
+<data key='eclipseLocation' value='/opt/IBM/IntegrationToolkit90'/>
+<data key='cic.selector.nl' value='de,en,es,fr,it,ja,ko,pt_BR,zh,zh_TW,ru,tr,pl'/>
+</profile>
+<install modify='false'>
+<offering profile='IBM Integration Toolkit' version='9.0.0.20140515-1210' features='com.ibm.integration.toolkit,com.ibm.rad.sdpcore,com.ibm.rad.jre' id='com.ibm.integration.toolkit.dev.v90'/>
+</install>
+<preference value='30' name='com.ibm.cic.common.core.preferences.connectTimeout'/>
+<preference value='30' name='com.ibm.cic.common.core.preferences.readTimeout'/>
+<preference value='0' name='com.ibm.cic.common.core.preferences.downloadAutoRetryCount'/>
+<preference value='true' name='offering.service.repositories.areUsed'/>
+<preference value='true' name='com.ibm.cic.common.core.preferences.preserveDownloadedArtifacts'/>
+</agent-input>
